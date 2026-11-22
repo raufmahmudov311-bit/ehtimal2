@@ -1,0 +1,16 @@
+:root{--bg:#f4f7f6;--fg:#12202b;--card:#fff;--ac:#1456d6;--mu:#5b6b76;--bd:#cfdad6;--ok:#17803d;--no:#b42318}
+[data-theme=dark]{--bg:#0e1a22;--fg:#e6eef2;--card:#16262f;--ac:#6aa5ff;--mu:#9bb0bb;--bd:#2a3f4b;--ok:#4cd07d;--no:#ff7a70}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Georgia,"Times New Roman",serif}
+header{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center;padding:12px 20px;border-bottom:1px solid var(--bd)}
+.logo{font-size:1.1rem;cursor:pointer}nav{display:flex;flex-wrap:wrap;gap:6px}
+main{max-width:860px;margin:0 auto;padding:20px}h1{font-size:1.7rem}h2,h3{margin-top:1.4em}
+button{font:inherit;font-family:system-ui,sans-serif;font-size:.9rem;background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:8px 14px;cursor:pointer}
+button:hover:not(:disabled){border-color:var(--ac)}button:focus-visible,input:focus-visible{outline:2px solid var(--ac)}button:disabled{opacity:.4;cursor:default}button.on{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:16px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.list{display:flex;flex-direction:column;gap:6px}.row{display:flex;justify-content:space-between;text-align:left;padding:12px 14px}
+.bar0{height:10px;background:var(--bd);border-radius:5px;overflow:hidden}.bar0 i{display:block;height:100%;background:var(--ac);transition:width .4s}
+.fm{overflow-x:auto;padding:6px 0}.muted{color:var(--mu);font-size:.9rem}.nav{display:flex;gap:8px;justify-content:space-between;margin-top:24px}
+label{display:block;margin:8px 0;font-family:system-ui,sans-serif;font-size:.9rem}input[type=range]{width:100%}svg{width:100%;height:auto}.bar{fill:var(--bd)}.bar.sel{fill:var(--ac)}
+.opt{display:block;width:100%;text-align:left;margin:6px 0}.opt.ok{border-color:var(--ok);color:var(--ok)}.opt.no{border-color:var(--no);color:var(--no)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
